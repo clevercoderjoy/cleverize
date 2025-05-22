@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
   "name": "cleverize",
-  "description": "A Google chrome extension used to cleverly summarize long content you quickly want to read or have a gist of it.",
+  "description": "...",
   "version": "1.0",
-  "permission": [
+  "permissions": [
     "scripting",
     "activeTab",
     "storage"
   ],
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "popup.html",
     "default_icon": "icon.png"
   },
   "content_scripts": [
@@ -18,14 +18,14 @@
         "<all_urls>"
       ],
       "js": [
-        "content.tsx"
+        "content.js"
       ]
     }
   ],
   "background": {
-    "service_worker": "background.tsx"
+    "service_worker": "background.js"
   },
-  "options_page": "options.tsx",
+  "options_page": "options.html",
   "host_permissions": [
     "<all_urls>"
   ]

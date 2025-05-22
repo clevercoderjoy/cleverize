@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./options.css">
+  <title>Options</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Clever Summary Settings</h1>
+    <div class="form-group">
+      <label for="api-key">🔑 Gemini API Key</label>
+      <input type="text" id="api-key" placeholder="Enter your Gemini API key here...">
+      <p>
+        You can get your Gemini API key from
+        <a href="https://aistudio.google.com/app/apikey" target="_blank">here.</a>
+      </p>
+    </div>
+    <button id="save-btn">Save API Key</button>
+    <p id="success-msg">Key saved successfully.</p>
+  </div>
+
+  <script src="./options.js"></script>
+</body>
+
+</html>
